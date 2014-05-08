@@ -1,0 +1,29 @@
+EJB -> CDI
+   - session bean
+   - message driven bean -> JMS
+  
+JPA
+    - entity class
+    - session facade -> menggunakan Stateless session bean 
+
+
+session Bean terbagi menjadi tiga bagian 
+
+-stateless
+   garbage collector mungkin dihancurkan , 
+   user 1 i=1
+   user 2 i=2
+   tidak ada user lagi( user 1,2 udahan) maka dibikin baru lagi instansiasi 
+   user 3 i=1
+- stateful
+   biasanya digunakan untuk shopping cart / tiap user masing masing(single user) /untuk processing diri sendiri
+   user 1 i=1  (new)
+   user 2 i=1  (new)
+   user 3 i=1  (new)
+   
+
+- singleton 
+   menyimpan seluruh state sampai server mati. walaupun clien sudah berhenti mengakses tersebut 
+   user 1 i=1  
+   user 2 i=2-> misal walaupun udah berhenti mengakses halaman user 3 akan bertambah jadi 3 (i)
+   user 3 i=3

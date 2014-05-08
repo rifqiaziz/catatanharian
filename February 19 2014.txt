@@ -1,0 +1,12 @@
+
+Manual bikin JMS di browser
+login 127.0.0.1:4848
+user admin
+password QTWd.6!YYCUY (di server,glashfish,properties)
+
+Md Bean
+=> JMS
+1. JMS Con Factory
+     => "jms/PesanFactory" -> tipenya Que conection factory
+2. JMS Destionation
+     => "jms/Pesan"   ->tipenya queue    

@@ -1,0 +1,31 @@
+codingan
+2 bean
+- stateless
+- stateful
+
+1 servlet
+- inject 2 bean dengan @EJB
+
+
+Catatan 
+
+
+
+Stateless bisa disimapn dalam stateful
+stateful TIDAK bisa disimpan dalam stateless 
+
+
+jlookup java:comp/env digunakan untuk.
+membuat stateful baru kalo usernya baru (tidak digunakan di stateless)
+
+TUGASS !!!!
+
+buat 3 haaman 
+
+hal 1  1 field x 1 button next  -> servlet (x->stateful) 
+hal 2  1 field y 1 button next  -> servlet (y -> stateful)
+
+hal 3 x: ....(nama domain isi field)
+      y: ....
+
+ 
